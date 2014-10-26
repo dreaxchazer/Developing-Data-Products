@@ -1,0 +1,44 @@
+---
+title       : Motor Trend Car Road Tests
+subtitle    : Average Miles/gallon for automobiles
+author      : KX
+job         : Undergraduate
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+### Objective: Find the average miles/gallon for automobiles in the mtcars data set.
+Load mtcars data and observe the number of variables in mtcars data.
+```{r}
+data(mtcars)
+str(mtcars)
+```
+
+---
+
+### Look at 'mpg' variable in mtcars data.
+Observe the Five-number summary of 'mpg' variable.
+```{r}
+summary(mtcars$mpg)
+```
+
+---
+
+### Boxplot of 'mpg' variable.
+Observe if there is any outlier.
+```{r}
+boxplot(mtcars$mpg)
+```
+
+---
+
+### Histogram of 'mpg' variable.
+```{r}
+hist(mtcars$mpg, xlab="Miles per gallon", col="lightblue", main="Histogram")
+```
+
+---
